@@ -1,32 +1,13 @@
 import React from "react";
 import { JSX } from "react";
 
-import { Event } from "./event";
+import { default as Event } from "./event";
+import { Node } from "./node";
 import styles from "src/components/Timeline/timeline.module.css";
 
 const getDaysBetween = (date1: Date, date2: Date): number => {
     const timeDiff = Math.abs(date2.getTime() - date1.getTime());
     return Math.ceil(timeDiff / (1000 * 3600 * 24));
-}
-
-export class Node {
-    id: number;
-    date: Date;
-    name: string;
-    grouping: string;
-    description: string;
-    pos: number;
-    layer: number;
-
-    constructor(id: number, date: Date, name: string, grouping: string, description: string, pos: number, layer: number) {
-        this.id = id;
-        this.date = date;
-        this.name = name;
-        this.grouping = grouping || "";
-        this.description = description || "";
-        this.pos = pos;
-        this.layer = layer;
-    }
 }
 
 //export function Timeline({ dates }: { dates: Event[] }) {
