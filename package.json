@@ -1,5 +1,8 @@
 {
-  "name": "timeline",
+  "name": "@jcfleming88/timeline",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/jcfleming88"
+  },
   "version": "1.0.0",
   "description": "Timeline component for React",
   "scripts": {
