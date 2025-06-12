@@ -1,7 +1,6 @@
 import React from "react";
-import { JSX } from "react";
 
-import { default as Event } from "./event";
+import { default as Event } from "./timelineEvent";
 import { Node } from "./node";
 import styles from "src/components/Timeline/timeline.module.css";
 

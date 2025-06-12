@@ -1,2 +1,2 @@
 export { default as Timeline } from "./timeline";
-export { default as Event } from "./event";
+export type { default as TimelineEvent } from "./timelineEvent";

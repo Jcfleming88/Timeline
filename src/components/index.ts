@@ -1,1 +1,1 @@
-export * from "./Timeline";
+export { TimelineEvent, Timeline } from "./Timeline";

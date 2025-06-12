@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/jcfleming88"
   },
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Timeline component for React",
   "scripts": {
     "rollup": "rollup -c"
