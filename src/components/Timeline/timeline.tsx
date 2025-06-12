@@ -29,7 +29,8 @@ export class Node {
     }
 }
 
-export default function Timeline({ dates }: { dates: Event[] }) {
+//export function Timeline({ dates }: { dates: Event[] }) {
+const Timeline: React.FC<{ dates: Event[] }> = ({ dates }) => {
     // Set out the nodes for each of the events
     const [nodes, setNodes] = React.useState<Node[]>([]);
 
@@ -176,3 +177,5 @@ export default function Timeline({ dates }: { dates: Event[] }) {
         </>
     );
 }
+
+export default Timeline;
