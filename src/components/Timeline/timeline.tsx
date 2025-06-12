@@ -1,6 +1,6 @@
 import React from "react";
 
-import { default as Event } from "./timelineEvent";
+import { default as TimelineEvent } from "./timelineEvent";
 import { Node } from "./node";
 import styles from "src/components/Timeline/timeline.module.css";
 
@@ -10,7 +10,7 @@ const getDaysBetween = (date1: Date, date2: Date): number => {
 }
 
 //export function Timeline({ dates }: { dates: Event[] }) {
-const Timeline: React.FC<{ dates: Event[] }> = ({ dates }) => {
+const Timeline: React.FC<{ dates: TimelineEvent[] }> = ({ dates }) => {
     // Set out the nodes for each of the events
     const [nodes, setNodes] = React.useState<Node[]>([]);
 
